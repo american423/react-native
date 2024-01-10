@@ -1116,6 +1116,8 @@ public class ReactTextInputManager extends BaseViewManager<ReactEditText, Layout
         stateWrapper.updateState(newStateData);
       }
 
+      return;
+
       // The event that contains the event counter and updates it must be sent first.
       // TODO: t7936714 merge these events
       mEventDispatcher.dispatchEvent(
